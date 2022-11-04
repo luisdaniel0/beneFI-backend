@@ -1,0 +1,82 @@
+[
+	{
+		"email": "Alexander_Flett6272@tonsy.org",
+		"firstName": "Alexander",
+		"lastName": "Flett",
+		"password": "123456",
+		"avatarImg": "",
+		"transactions": []
+	},
+	{
+		"email": "Eduardo_Patel5768@joiniaa.com",
+		"firstName": "Eduardo",
+		"lastName": "Patel",
+		"password": "123456",
+		"avatarImg": "",
+		"transactions": []
+	},
+	{
+		"email": "Juliette_Ellery6906@bretoux.com",
+		"firstName": "Juliette",
+		"lastName": "Ellery",
+		"password": "123456",
+		"avatarImg": "",
+		"transactions": []
+	},
+	{
+		"email": "Esmeralda_Whitmore5586@irrepsy.com",
+		"firstName": "Esmeralda",
+		"lastName": "Whitmore",
+		"password": "123456",
+		"avatarImg": "",
+		"transactions": []
+	},
+	{
+		"email": "Cara_Rowlands6613@extex.org",
+		"firstName": "Cara",
+		"lastName": "Rowlands",
+		"password": "123456",
+		"avatarImg": "",
+		"transactions": []
+	},
+	{
+		"email": "Boris_Cunningham8660@tonsy.org",
+		"firstName": "Boris",
+		"lastName": "Cunningham",
+		"password": "123456",
+		"avatarImg": "",
+		"transactions": []
+	},
+	{
+		"email": "Hope_Lewin6857@twipet.com",
+		"firstName": "Hope",
+		"lastName": "Lewin",
+		"password": "123456",
+		"avatarImg": "",
+		"transactions": []
+	},
+	{
+		"email": "Priscilla_Weatcroft1245@sveldo.biz",
+		"firstName": "Priscilla",
+		"lastName": "Weatcroft",
+		"password": "123456",
+		"avatarImg": "",
+		"transactions": []
+	},
+	{
+		"email": "Destiny_Raven6909@muall.tech",
+		"firstName": "Destiny",
+		"lastName": "Raven",
+		"password": "123456",
+		"avatarImg": "",
+		"transactions": []
+	},
+	{
+		"email": "Tony_Chappell4273@deavo.com",
+		"firstName": "Tony",
+		"lastName": "Chappell",
+		"password": "123456",
+		"avatarImg": "",
+		"transactions": []
+	}
+]
