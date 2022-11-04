@@ -6,7 +6,7 @@ let Transaction = new Schema({
   to: { type: String },
   from: { type: String }, 
   currency: { type: String },
-  dollarAmount: { type: Number },
+  usdAmount: { type: Number },
   sentOn: {type: Date}
 
 })
