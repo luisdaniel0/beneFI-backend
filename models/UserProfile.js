@@ -9,7 +9,7 @@ let UserProfile = new Schema({
   lastName: { type: String },
   password: { type: String },
   avatarImg: { type: String },
-  transaction: [Transaction]
+  transactions: [Transaction]
 })
 
 export default mongoose.model("UserProfiles", UserProfile)
