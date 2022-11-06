@@ -15,7 +15,7 @@ export const getUser = async (req, res) => {
     const { id } = req.params;
     const user = await User.findById(id)
     if (user) {
-      return res.json(user);
+      return res.json(user).populate("transactions");
     }
     res.status(404).json({ message: "User not found!" });
   } catch (error) {
