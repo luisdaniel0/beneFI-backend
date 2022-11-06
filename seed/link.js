@@ -12,7 +12,10 @@ let linkUsers = async ()=> {
 
     users.forEach((user) => {
         transactions.forEach((transaction) => {
-            if (user.email === (transaction.to || transaction.from)) {
+            if (user.email === transaction.to) {
+                axios.put(`${transactionsURL}/${transaction._id}/${user._id}`)
+            }
+            if (user.email === transaction.from) {
                 axios.put(`${transactionsURL}/${transaction._id}/${user._id}`)
             }
         })
