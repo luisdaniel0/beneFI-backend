@@ -1,11 +1,11 @@
 import { Router } from "express";
-import * as controllers from "../controllers/leagues.js";
+import * as controllers from "../controllers/userProfile.js";
 const router = Router();
 
-router.get("/", controllers.getLeagues);
-router.get("/:id", controllers.getLeague);
-router.post("/", controllers.createLeague);
-router.put("/:id", controllers.updateLeague);
-router.delete("/:id", controllers.deleteLeague);
+router.get("/", controllers.getUsers);
+router.get("/:id", controllers.getUser);
+router.post("/", controllers.createUser);
+router.put("/:id", controllers.updateUser);
+router.delete("/:id", controllers.deleteUser);
 
 export default router;
