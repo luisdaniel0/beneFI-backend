@@ -10,7 +10,7 @@ let UserProfile = new Schema({
   lastName: { type: String },
   password: { type: String },
   avatarImg: { type: String },
-  transactions: [{ type: Schema.Types.ObjectId, ref : "transactions" }]
+  transactions: [{ type: Schema.Types.ObjectId, ref : "Transactions" }]
 })
 
 export default mongoose.model("UserProfiles", UserProfile)
