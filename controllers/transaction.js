@@ -54,8 +54,8 @@ export const linkTransaction = async (req, res) => {
 export const deleteTransaction = async (req, res) => {
   try {
     const { id } = req.params;
-    const deleted = await Transaction.findByIdAndDelete(_id);
-
+    const deleted = await Transaction.deleteOne({ '_id': id });
+    
     if (deleted) {
       return res.status(200).send("Transaction deleted!");
     }
