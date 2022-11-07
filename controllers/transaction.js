@@ -30,6 +30,7 @@ export const createTransaction = async (req, res) => {
     const transaction = new Transaction(req.body);
     await transaction.save();
     res.status(201).json(transaction);
+    console.log(transaction._id)
   } catch (error) {
     console.error(error);
     res.status(500).json({ error: error.message });
@@ -49,3 +50,19 @@ export const linkTransaction = async (req, res) => {
         res.status(500).json({ error: error.message })
     }
 }
+
+export const deleteTransaction = async (req, res) => {
+  try {
+    const { id } = req.params;
+    const deleted = await Transaction.findByIdAndDelete(id);
+
+    if (deleted) {
+      return res.status(200).send("Transaction deleted!");
+    }
+
+    throw new Error("Transaction not found");
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ error: error.message });
+  }
+};
