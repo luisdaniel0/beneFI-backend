@@ -38,7 +38,7 @@ export const createUser = async (req, res) => {
 export const updateUser = async (req, res) => {
   try {
     const { id } = req.params;
-    const user = await League.findByIdAndUpdate(id, req.body);
+    const user = await User.findByIdAndUpdate(id, req.body);
     res.status(201).json(user);
   } catch (error) {
     console.error(error);
@@ -49,7 +49,7 @@ export const updateUser = async (req, res) => {
 export const deleteUser = async (req, res) => {
   try {
     const { id } = req.params;
-    const user = await League.findByIdAndDelete(id);
+    const user = await User.findByIdAndDelete(id);
 
     if (user) {
       return res.status(200).send("User deleted!");
