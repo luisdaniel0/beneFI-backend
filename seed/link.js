@@ -36,10 +36,17 @@ let test = async () => {
         sentOn: new Date()
     }
 
-    let deleted = await axios.delete(`${transactionsURL}/63692a1cba3b1d31a601e65d`)
+    let deleted = await axios.delete(`${transactionsURL}63692a1cba3b1d31a601e65d`)
 
-    let response = await axios.post(transactionsURL, newTransaction)
-    console.log (response.data._id)
+    /*
+    let response = await axios.post(
+        {
+            url: transactionsURL,
+            data: JSON.stringify(newTransaction),
+            contentType: 'application/json'
+        })
+    console.log (response.data)
+    */
 }
 
 test()
