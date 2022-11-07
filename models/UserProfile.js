@@ -1,6 +1,7 @@
 import mongoose from "mongoose";
 const Schema = mongoose.Schema;
-import Transaction from "./Transaction.js"
+import Transactions from "./Transaction.js"
+
 
 let UserProfile = new Schema({
 
@@ -9,7 +10,7 @@ let UserProfile = new Schema({
   lastName: { type: String },
   password: { type: String },
   avatarImg: { type: String },
-  transactions: [Transaction]
+  transactions: [{ type: Schema.Types.ObjectId, ref : "Transactions" }]
 })
 
 export default mongoose.model("UserProfiles", UserProfile)
